@@ -1,0 +1,221 @@
+<!doctype html>
+<html ng-app="mkav03App" class="no-js" lang="">
+<!-- HEAD with META/STYLESHEETS/SCRIPTS -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="theme-color" content="#ba3f68" />
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Base information for HTML5 Mode, which removes #! (hash-bang) from the APP URL ### -->
+    <base href="/">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="static/css/normalize.min.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/bulma.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+
+
+    <script src="static/js/vendor/angular.js"></script>
+
+    <script src="static/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="static/js/vendor/angular-ui-router.js"></script>
+    <script src="static/js/vendor/angular-resource.min.js"></script>
+
+    <script src="static/js/vendor/angular-jwt.min.js"></script>
+    <script src="static/js/vendor/ngStorage.js"></script>
+    <script src="static/js/vendor/angular-storage.js"></script>
+    <script src="static/js/vendor/angular-animate.min.js"></script>
+
+
+
+
+    <script src="static/angular_assets/app.module.js"></script>
+    <script src="static/angular_assets/app.config.js"></script>
+
+    <!--ng-Assets that should be minified and joined for production env-->
+
+    <!-- CORE assets/services ###################################################################### -->
+    <!-- Defines communication with REST-API (DRF) -->
+    <script src="static/angular_assets/core/core.module.js"></script>
+
+    <!-- Login service -->
+    <script src="static/angular_assets/core/login/login.module.js"></script>
+    <script src="static/angular_assets/core/login/login.service.js"></script>
+
+    <!-- Register service -->
+    <script src="static/angular_assets/core/register/register.module.js"></script>
+    <script src="static/angular_assets/core/register/register.service.js"></script>
+
+    <!-- Username service (used for checking whether username is already in use) -->
+    <script src="static/angular_assets/core/username/username.module.js"></script>
+    <script src="static/angular_assets/core/username/username.service.js"></script>
+
+    <!-- Leistungserbringer service -->
+    <script src="static/angular_assets/core/leistungserbringer/leistungserbringer.module.js"></script>
+    <script src="static/angular_assets/core/leistungserbringer/leistungserbringer.service.js"></script>
+
+    <!-- Verbände service -->
+    <script src="static/angular_assets/core/verbaende/verbaende.module.js"></script>
+    <script src="static/angular_assets/core/verbaende/verbaende.service.js"></script>
+
+    <!-- Kostenträgerregionen service -->
+    <script src="static/angular_assets/core/kostentraegerregionen/kostentraegerregionen.module.js"></script>
+    <script src="static/angular_assets/core/kostentraegerregionen/kostentraegerregionen.service.js"></script>
+
+    <!-- Tarifregionen service -->
+    <script src="static/angular_assets/core/tarifregionen/tarifregionen.module.js"></script>
+    <script src="static/angular_assets/core/tarifregionen/tarifregionen.service.js"></script>
+
+    <!-- Token-Refresh service -->
+    <script src="static/angular_assets/core/tokenrefresh/tokenrefresh.module.js"></script>
+    <script src="static/angular_assets/core/tokenrefresh/tokenrefresh.service.js"></script>
+
+    <!-- Mitarbeiter service -->
+    <script src="static/angular_assets/core/mitarbeiter/mitarbeiter.module.js"></script>
+    <script src="static/angular_assets/core/mitarbeiter/mitarbeiter.service.js"></script>
+
+    <!-- Ärzte service -->
+    <script src="static/angular_assets/core/aerzte/aerzte.module.js"></script>
+    <script src="static/angular_assets/core/aerzte/aerzte.service.js"></script>
+
+    <!-- ################################################################################## -->
+
+
+
+
+
+
+
+    <!-- LOGIN assets -->
+    <script src="static/angular_assets/login/login.module.js"></script>
+    <script src="static/angular_assets/login/login.component.js"></script>
+
+    <!-- REGISTER assets -->
+    <script src="static/angular_assets/register/register.module.js"></script>
+    <script src="static/angular_assets/register/register.component.js"></script>
+
+    <!-- MAIN MENU assets -->
+    <script src="static/angular_assets/menu/menu.module.js"></script>
+    <script src="static/angular_assets/menu/menu.component.js"></script>
+
+    <!-- MAIN NAV assets -->
+    <script src="static/angular_assets/main_nav/main_nav.module.js"></script>
+    <script src="static/angular_assets/main_nav/main_nav.component.js"></script>
+
+    <!-- PROFILE assets -->
+    <script src="static/angular_assets/profile/profile.module.js"></script>
+    <script src="static/angular_assets/profile/profile.component.js"></script>  
+
+    <!-- ÄRZTE assets -->
+    <script src="static/angular_assets/aerzte/aerzte_overview/aerzte_overview.module.js"></script>
+    <script src="static/angular_assets/aerzte/aerzte_overview/aerzte_overview.component.js"></script>
+
+    <script src="static/angular_assets/aerzte/aerzte_add/aerzte_add.module.js"></script>
+    <script src="static/angular_assets/aerzte/aerzte_add/aerzte_add.component.js"></script>   
+
+    <script src="static/angular_assets/aerzte/aerzte_view/aerzte_view.module.js"></script>
+    <script src="static/angular_assets/aerzte/aerzte_view/aerzte_view.component.js"></script>     
+
+    <script src="static/angular_assets/aerzte/aerzte_edit/aerzte_edit.module.js"></script>
+    <script src="static/angular_assets/aerzte/aerzte_edit/aerzte_edit.component.js"></script>  
+
+    <!-- MITARBEITER assets -->
+    <script src="static/angular_assets/mitarbeiter/mitarbeiter_overview/mitarbeiter_overview.module.js"></script>
+    <script src="static/angular_assets/mitarbeiter/mitarbeiter_overview/mitarbeiter_overview.component.js"></script>
+
+    <script src="static/angular_assets/mitarbeiter/mitarbeiter_add/mitarbeiter_add.module.js"></script>
+    <script src="static/angular_assets/mitarbeiter/mitarbeiter_add/mitarbeiter_add.component.js"></script>
+
+    <script src="static/angular_assets/mitarbeiter/mitarbeiter_view/mitarbeiter_view.module.js"></script>
+    <script src="static/angular_assets/mitarbeiter/mitarbeiter_view/mitarbeiter_view.component.js"></script>
+
+    <script src="static/angular_assets/mitarbeiter/mitarbeiter_edit/mitarbeiter_edit.module.js"></script>
+    <script src="static/angular_assets/mitarbeiter/mitarbeiter_edit/mitarbeiter_edit.component.js"></script>
+
+    <!--########################################################################-->
+
+</head>
+
+<body class="Site appbg">
+    <header></header>
+
+    <main class="Site-content is-fullwidth flex-container ">
+
+        <div class="container" style="flex-basis: 100%">
+
+            <!-- Pages are injected here -->
+            <div ui-view class="columns" style="margin-top: 0px; padding-top: 20px;">
+
+            </div>
+
+        </div>
+
+    </main>
+
+<footer class="Site-footer">
+    <div class="container">
+        <div class="content has-text-centered" >
+
+                <div class="columns fnt_white" style="margin-bottom: 0px">
+                    <div class="column" style="padding-bottom: 0px;">
+                        <strong class="fnt_white">mkav03</strong> | &copy; 2017 
+                        <a class="link" href="http://www.herbst-edv.de/">Herbst EDV Beratung GmbH</a>
+                    </div>
+                </div>
+
+                <div class="columns fnt_white" style="margin-bottom: 0px">
+                    <div class="column"> 
+
+                        <div class="contact-info">
+                            <span class="icon is-small">
+                                <i class="fa fa-phone "></i>
+                            </span> 
+                            <a class="link" href="tel:+492634981505" >02634981505</a>
+                        </div>
+
+                        <div class="contact-info">
+                            <span class="icon is-small">
+                                <i class="fa fa-fax"></i>
+                            </span>
+                            <a class="link" href="tel:+492634981508" >02634981508</a>
+                        </div>
+
+                        <div class="contact-info">
+                            <span class="icon is-small">
+                                <i class="fa fa-envelope"></i> 
+                            </span>
+                            <a class="link"  href="mailto:info@physio-abrechnung.de">info@physio&#8209abrechnung.de</a>
+                        </div>
+
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</footer>
+
+    <!--########################################################################-->
+    <!-- JAVASCRIPT DATEIEN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="/static/js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="static/js/plugins.js"></script>
+
+    <script>
+// Add the CSRF Token
+var app = angular.module('mkav03App'); // Not including a list of dependent modules (2nd parameter to `module`) "re-opens" the module for additional configuration
+app.config(['$httpProvider', function($httpProvider) {
+    $httpProvider.defaults.headers.common['X-CSRFToken'] = '{{ csrf_token|escapejs }}';
+}]);
+</script>
+
+</body>

@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+html{
+  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+  .Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  
+  
+  }
+  
+  .Site-content {
+    flex: 1;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+  }
+
+
+  .flex-container{
+    flex: 1 0 auto;
+    display: flex;
+    overflow-y: auto;
+    width: 100%;
+  
+  }
+  
+  .flex-container > div
+  {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+     }
+  
